@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "global_values.hpp"
+#include "global_values.h"
 #include <iostream>
 
 sf::Texture home_screen_png;
@@ -323,16 +323,6 @@ void load_textures() {
     sf::RenderTexture lv3_walls_surf;
     lv3_walls_surf.create(size.x, size.y);
     lv3_walls_surf.draw(lv3_walls_sprite);
-
-    sf::Texture lv3_traps_texture;
-    lv3_traps_texture.loadFromFile("image/levels_image/level_3/lv3_lovyshki_dark.png");
-    sf::Sprite lv3_traps_sprite;
-    lv3_traps_sprite.setTexture(lv3_traps_texture);
-    lv3_traps_sprite.setScale(size.x / lv3_traps_texture.getSize().x, size.y / lv3_traps_texture.getSize().y);
-
-    sf::RenderTexture lv3_traps_surf;
-    lv3_traps_surf.create(size.x, size.y);
-    lv3_traps_surf.draw(lv3_traps_sprite);
 
     sf::Texture lv3_traps_texture;
     lv3_traps_texture.loadFromFile("image/levels_image/level_3/lv3_lovyshki_dark.png");
