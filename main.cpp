@@ -5,7 +5,7 @@ using namespace sf;
 int main()
 {
 
-    RenderWindow window(VideoMode(400, 400), L"Новый проект", Style::Default);
+    RenderWindow window(VideoMode(400, 400), L"Labirinth", Style::Default);
 
     window.setVerticalSyncEnabled(true);
 
